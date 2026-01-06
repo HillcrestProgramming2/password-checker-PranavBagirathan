@@ -12,6 +12,8 @@ public class CriteriaCheckerTest {
     /**
      * Tests for weak password
      */
+
+
     @Test
     public void test_weakPasswordShouldBeSet() {
         Assertions.assertEquals(1, org.hillcrest.chapter6.password.CriteriaChecker.evaluateCriteria("12345"));
@@ -46,7 +48,7 @@ public class CriteriaCheckerTest {
     }
 
     /**
-     * Tests for password that is fully uppercase
+     * Tests for password that meets a score of 2
      */
     @Test
     public void test_Twocase() {
